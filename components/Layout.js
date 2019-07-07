@@ -4,7 +4,7 @@ import Router from 'next/router';
 import NProgress from 'nprogress';
 
 Router.onRouteChangeStart = url => {
-  console.log(url);
+  //console.log(url);
   NProgress.start();
 }
 
@@ -25,6 +25,9 @@ export default ({ children, title }) => (
       </Link>
       <Link href="/hireme">
         <a>Hired</a>
+      </Link>
+      <Link href="/blog">
+        <a>Blog</a>
       </Link>
     </header>
 
